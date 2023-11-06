@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+}
+
+html{
+    background: rgb(113,9,162);
+    background: linear-gradient(180deg, rgba(113,9,162,1) 13%, rgba(0,212,255,1) 100%); 
+    min-height: 100vh;
+}
+
+form{
+    margin: 20px auto;
+    max-width: 500px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(30,30,106);
+    font-family: open sans;
+}
+
+form *{
+    font-size: 18px;
+    color: white;
+}
+
+form h2{
+    text-align: center;
+    padding-bottom: 10px;
+    background-color: rgb(2, 4, 78);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+form .wrapper{
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+form .wrapper.editor{
+    border: 1px rgba(255, 255, 255,0.5) solid;
+    display: inline;
+}
+
+form .wrapper.attributes{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 100%;
+    margin: 15px 0;
+
+    padding: 0px;
+    border: none;
+}
+
+form textarea{
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    color: black;
+    height: auto;
+    resize:vertical;
+    
+    border: 1px white solid;
+    background-color: rgb(36, 36, 133);
+    color: white;
+}
+
+
+form input[type=radio],
+form input[type=checkbox]{
+    scale:1.5;
+    margin-right: 10px
+}
+
+.input__wrapper {
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+  }
+   
+  .input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+   
+   
+  .input__file-button {
+    width: 200px;
+    max-width: 290px;
+    height: 60px;
+    background: #1bbc9b;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+button{
+    max-width:80%;
+    margin: 10px 0;
+    font-size: 18px;
+    background: linear-gradient(180deg, rgba(18,207,2,1) 6%, rgba(1,119,10,1) 60%, rgba(1,87,8,1) 100%);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:active{
+    background: linear-gradient(180deg, rgb(15, 170, 1) 6%, rgb(1, 92, 8) 60%, rgb(0, 37, 3) 100%);
+}
+
+span{
+    font-size: 18px;
+    margin: auto 5px auto 0;
+}
+
+input[type=text]{
+    width: calc(90% - 20px);
+    border:none;
+    border-bottom: 1px solid white;
+    background-color: rgb(36, 36, 133);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.delete, .up, .down{
+    width:24px;
+    height:30px;
+    background-color: red;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete:active, .up:active, .down:active{
+    background-color: rgb(172, 169, 169);
+}
+
+.up, .down{
+    background-color: goldenrod;
+    writing-mode: vertical-rl;
+    width: auto;
+}
+
+
+.operations, select,option{
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: rgba(0, 0, 0,0.4);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.operations:hover, select:hover, option:hover{
+    background-color: rgba(0, 0, 0,0.7);
+}
+
+.operations:active{
+    background-color: black;
+    transition: 0;
+}
+
+.operations{
+    display: flex;
+    cursor: pointer;
+}
+
+.operations a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    width: 280px;
+    height: 100%;
+}
+
+.preview{
+    border:none !important;
+}
+
+.hide{
+    display: none !important;
+}
